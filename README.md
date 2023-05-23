@@ -61,7 +61,7 @@ The repository also contains files for setting up linters and validators.
 - On page load render the dynamically created list of tasks in the dedicated placeholder. The list  appear in order of the index values for each task.
 - Create a style.css and set rules for the Leaderboard. CSS must be loaded by Webpack Style/CSS Loader. 
 
-![image](#)
+![image](https://github.com/Benawi/Microverse-Leaderboard/assets/21217148/b30ea17f-d874-4936-9fc8-71b835fe2f9a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
