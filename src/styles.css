@@ -47,3 +47,33 @@ main {
   border-bottom: 1px solid var(--main-color);
   border-right: 1px solid var(--main-color);
 }
+
+/* INPUT STYLES */
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.default-input-style {
+  background-color: var(--main-bc-color);
+  color: var(--main-color);
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.default-input-style:focus {
+  border: 2px solid var(--main-color);
+  outline: none;
+}
+
+.default-input-style::placeholder {
+  color: var(--main-color);
+}
