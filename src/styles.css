@@ -28,3 +28,22 @@ main {
   max-width: 1200px;
   max-height: 100vh;
 }
+
+/* BUTTON STYLES */
+.default-button {
+  background-color: var(--main-bc-color);
+  border-top: 1px solid var(--main-color);
+  border-left: 1px solid var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+  border-right: 3px solid var(--main-color);
+  color: var(--main-color);
+  padding: 0.3rem 0.4rem;
+  font-weight: 800;
+}
+
+.default-button:active {
+  border-top: 3px solid var(--main-color);
+  border-left: 3px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  border-right: 1px solid var(--main-color);
+}
