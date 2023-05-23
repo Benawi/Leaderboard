@@ -77,3 +77,22 @@ input[type=number]::-webkit-outer-spin-button {
 .default-input-style::placeholder {
   color: var(--main-color);
 }
+
+/* FONT STYLES */
+
+.paragraph-style {
+  margin: 0 !important;
+}
+
+.underline-effect {
+  text-decoration: underline;
+  text-decoration-color: var(--main-color);
+  text-decoration-thickness: 5px;
+  text-underline-offset: 5px;
+}
+
+.title-style {
+  font-family: 'Permanent Marker', cursive;
+  color: var(--main-color);
+  margin-bottom: 0 !important;
+}
