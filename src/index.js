@@ -28,3 +28,14 @@ const data = [
   },
 ];
 
+const displayItems = () => {
+  const container = document.querySelector('#leaderboard-container');
+  data.forEach((item, index) => {
+    container.innerHTML += `<li id="score-${index}" class="leaderboard-rows d-flex">
+    <p>${item.name}</p>
+    <p>:</p>
+    <p>${item.score}</p>
+    </li>`;
+  });
+};
+
