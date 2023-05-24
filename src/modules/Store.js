@@ -4,11 +4,22 @@ export default class Store {
       this.scoresUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/266Uox8RtUVX6YlFdld7/scores/';
     }
   
-    addNewItem(user, score) {
+    addScore(user, score) {
       this.obj = {
         user,
         score,
       };
   
-     
+      const promise = fetch(this.scoresUrl, {
+        method: 'POST',
+        body: JSON.stringify(this.obj),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+        .then((response) => response.json().result);
+      return promise;
+    }
+  
+    
   }
