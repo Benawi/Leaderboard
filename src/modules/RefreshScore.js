@@ -8,5 +8,10 @@ export default class RefreshScore {
     this.refreshButton = document.getElementById('refresh-score');
   }
 
-  
+  addRefreshOnClick() {
+    this.refreshButton.addEventListener('click', () => {
+      this.UI.displayLeaderboard();
+      
+    });
+  }
 }
