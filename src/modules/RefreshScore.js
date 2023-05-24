@@ -11,7 +11,6 @@ export default class RefreshScore {
   addRefreshOnClick() {
     this.refreshButton.addEventListener('click', () => {
       this.UI.displayLeaderboard();
-      
     });
   }
 }

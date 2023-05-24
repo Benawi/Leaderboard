@@ -28,11 +28,11 @@ export default class AddScore {
       });
     });
     this.score.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && e.target.value) {
-            this.AddItem().then(() => {
-                this.UI.displayLeaderboard();
-              });
-        }});
-        
+      if (e.key === 'Enter' && e.target.value) {
+        this.AddItem().then(() => {
+          this.UI.displayLeaderboard();
+        });
+      }
+    });
   }
 }
