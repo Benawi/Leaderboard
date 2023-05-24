@@ -20,6 +20,15 @@ export default class Store {
         .then((response) => response.json().result);
       return promise;
     }
-  
+    #privateSetData() {
+        this.data = fetch(this.scoresUrl)
+          .then((response) => response.json())
+          .then((json) => (json.result));
+      }
+    
+      getData() {
+        this.#privateSetData();
+        return this.data;
+      }
     
   }
