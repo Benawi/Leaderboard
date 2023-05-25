@@ -1,42 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AddScore from './modules/AddScore.js';
+import RefreshScore from './modules/RefreshScore.js';
+import UserInterface from './modules/UI.js';
 import './styles.css';
 
-const data = [
-  {
-    name: 'Habtamu',
-    score: 100,
-  },
-  {
-    name: 'Alemayeh',
-    score: 200,
-  },
-  {
-    name: 'Bena',
-    score: 50,
-  },
-  {
-    name: 'Habtamu Alemayehu',
-    score: 50,
-  },
-  {
-    name: 'Microverse',
-    score: 5010,
-  },
-  {
-    name: 'Alexander',
-    score: 50,
-  },
-];
+const UI = new UserInterface();
+const ADD_SCORE = new AddScore();
+const REFRESH_SCORE = new RefreshScore();
 
-const displayItems = () => {
-  const container = document.querySelector('#leaderboard-container');
-  data.forEach((item, index) => {
-    container.innerHTML += `<li id="score-${index}" class="leaderboard-rows d-flex">
-    <p>${item.name}</p>
-    <p>:</p>
-    <p>${item.score}</p>
-    </li>`;
-  });
-};
-
-displayItems();
+UI.displayLeaderboard();
+ADD_SCORE.AddItemOnClick();
+REFRESH_SCORE.addRefreshOnClick();
