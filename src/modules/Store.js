@@ -4,23 +4,6 @@ export default class Store {
     this.scoresUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/266Uox8RtUVX6YlFdld7/scores/';
   }
 
-  /* addScore(user, score) {
-    this.obj = {
-      user,
-      score,
-    };
-
-    const promise = fetch(this.scoresUrl, {
-      method: 'POST',
-      body: JSON.stringify(this.obj),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    })
-      .then((response) => response.json().result);
-    return promise;
-  } */
-
   async addScore(user, score) {
     this.obj = {
       user,
@@ -38,12 +21,7 @@ export default class Store {
     return json.result;
   }
 
-  /*
-    #privateSetData() {
-    this.data = fetch(this.scoresUrl)
-      .then((response) => response.json())
-      .then((json) => (json.result));
-  } */
+
   async #privateSetData() {
     const response = await fetch(this.scoresUrl);
     const json = await response.json();

@@ -20,21 +20,7 @@ export default class AddScore {
     return null;
   }
 
-  /*   AddItemOnClick() {
-    this.addButton.addEventListener('click', () => {
-      this.AddItem().then(() => {
-        this.UI.displayLeaderboard();
-      });
-    });
-    this.score.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' && e.target.value) {
-        this.AddItem().then(() => {
-          this.UI.displayLeaderboard();
-        });
-      }
-    });
-  } */
-
+  
   AddItemOnClick() {
     this.addButton.addEventListener('click', async () => {
       await this.AddItem();
