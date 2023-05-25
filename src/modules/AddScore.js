@@ -9,7 +9,7 @@ export default class AddScore {
     this.score = document.getElementById('input-score');
   }
 
-  AddItem() {
+  async AddItem() {
     this.user = document.getElementById('input-user').value;
     this.score = document.getElementById('input-score').value;
     if (this.user && this.score) {
