@@ -68,7 +68,6 @@ The repository also contains files for setting up linters and validators.
  - Arrow functions used instead of the function keyword.
  - async and await JavaScript features used to consume the API.
 ![image](https://github.com/Benawi/Microverse-Leaderboard/assets/21217148/d7057049-2c02-482c-b826-df3abd2bf8bb)
-![image](https://github.com/Benawi/Microverse-Leaderboard/assets/21217148/f9ff71d2-1d78-4677-90f5-65f7990ff79b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
