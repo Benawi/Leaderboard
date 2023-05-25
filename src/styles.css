@@ -115,3 +115,44 @@ input[type=number]::-webkit-outer-spin-button {
   overflow-y: hidden;
 }
 
+.leaderboard-container {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.leaderboard-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.leaderboard-container::-webkit-scrollbar-track {
+  background: #dfdddd;
+}
+
+.leaderboard-container::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+.leaderboard-container::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
+
+.left-content-header {
+  border-bottom: 1px solid var(--secundary-color);
+  padding-bottom: 1rem;
+}
+
+.leaderboard-rows {
+  align-items: center;
+  padding: 0.1rem 0.1rem;
+  border-bottom: 1px solid var(--secundary-color);
+}
+
+.leaderboard-rows:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+.spinner-border {
+  top: 50%;
+  left: 45%;
+  color: var(--main-color);
+}
