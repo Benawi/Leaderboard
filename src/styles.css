@@ -156,3 +156,15 @@ input[type=number]::-webkit-outer-spin-button {
   left: 45%;
   color: var(--main-color);
 }
+
+/* RIGHT CONTENT */
+.right-content {
+  padding: 1rem;
+  border: 5px solid var(--main-color);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.right-content-header {
+  padding-bottom: 1rem;
+}
