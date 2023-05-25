@@ -17,18 +17,21 @@ export default class AddScore {
       document.getElementById('input-score').value = '';
       return this.store.addScore(this.user, this.score);
     }
+
     return null;
   }
 
   AddItemOnClick() {
-    this.addButton.addEventListener('click', async () => {
-      await this.AddItem();
-      this.UI.displayLeaderboard();
-    });
-    this.score.addEventListener('keydown', async (e) => {
-      if (e.key === 'Enter' && e.target.value) {
-        await this.AddItem();
+    this.addButton.addEventListener('click', () => {
+      this.AddItem().then(() => {
         this.UI.displayLeaderboard();
+      });
+    });
+    this.score.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && e.target.value) {
+        this.AddItem().then(() => {
+          this.UI.displayLeaderboard();
+        });
       }
     });
   }
