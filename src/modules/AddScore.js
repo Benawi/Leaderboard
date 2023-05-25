@@ -20,7 +20,7 @@ export default class AddScore {
     return null;
   }
 
-/*   AddItemOnClick() {
+  /*   AddItemOnClick() {
     this.addButton.addEventListener('click', () => {
       this.AddItem().then(() => {
         this.UI.displayLeaderboard();
@@ -34,7 +34,6 @@ export default class AddScore {
       }
     });
   } */
-
 
   AddItemOnClick() {
     this.addButton.addEventListener('click', async () => {

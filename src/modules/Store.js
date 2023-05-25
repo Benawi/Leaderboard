@@ -26,18 +26,19 @@ export default class Store {
       user,
       score,
     };
-        const response = await fetch(this.scoresUrl, {
-        method: 'POST',
-        body: JSON.stringify(this.obj),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-    
-      });
-      const json = await response.json();
-      return json.result;
+    const response = await fetch(this.scoresUrl, {
+      method: 'POST',
+      body: JSON.stringify(this.obj),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+
+    });
+    const json = await response.json();
+    return json.result;
   }
-/* 
+
+  /*
     #privateSetData() {
     this.data = fetch(this.scoresUrl)
       .then((response) => response.json())
@@ -50,10 +51,7 @@ export default class Store {
   }
 
   async getData() {
-      this.#privateSetData();
-      return this.data;
-    }
-
-
-    
+    this.#privateSetData();
+    return this.data;
+  }
 }
