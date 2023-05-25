@@ -21,7 +21,6 @@ export default class Store {
     return json.result;
   }
 
-
   async #privateSetData() {
     const response = await fetch(this.scoresUrl);
     const json = await response.json();

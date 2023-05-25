@@ -20,7 +20,6 @@ export default class AddScore {
     return null;
   }
 
-  
   AddItemOnClick() {
     this.addButton.addEventListener('click', async () => {
       await this.AddItem();
