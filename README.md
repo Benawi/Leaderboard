@@ -73,7 +73,7 @@ The repository also contains files for setting up linters and validators.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://benawi.github.io/Microverse-Leaderboard/dist/)
+- [Live Demo](https://benawi.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
