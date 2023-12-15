@@ -29,7 +29,7 @@ LeaderBoard - Microverse! project is a repository consisting of the following fi
 - HTML file 
 - CSS file 
 - JS files
-- HTML,CSS, and JS linters file
+- HTML, CSS, and JS linters file
 
 
 The repository also contains files for setting up linters and validators.
