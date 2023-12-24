@@ -63,7 +63,7 @@ The repository also contains files for setting up linters and validators.
  - The [Leaderboard API documentation](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) followed.
  - A new game with the name of 'benawiGame' created by using the API.
  - The ID of 'benawiGame game save that has  been returned by API.
- - The "Refresh" button Implemented that will get all scores for a game created by you from the API (receiving data from the API and parsing the JSON).
+ - The "Refresh" button is Implemented that will get all scores for a game created by you from the API (receiving data from the API and parsing the JSON).
  - The form "Submit" button is implemented that will save a score for a game created (sending data to the API).
  - Arrow functions used instead of the function keyword.
  - async and await JavaScript features used to consume the API.
