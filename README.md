@@ -54,11 +54,11 @@ The repository also contains files for setting up linters and validators.
 - Create an index.html file and 
 - Leaderboard item placeholder (div or ul element).
 - The index.html file must be set as a template using the HTML Webpack Plugin.
-- Create an index.js file and set an array of some simple to do tasks (array of objects). Each task object  contain three keys:
+- Create an index.js file and set an array of some simple to-do tasks (array of objects). Each task object  contain three keys:
    - name [string].
    - score [number].
 - A function to iterate over the tasks array and populate an HTML list item element for each task.
-- On page load render the dynamically created list of tasks in the dedicated placeholder. The list  appear in order of the index values for each task.
+- On page load render the dynamically created list of tasks in the dedicated placeholder. The list  appears in order of the index values for each task.
 - Create a style.css and set rules for the Leaderboard. CSS must be loaded by Webpack Style/CSS Loader. 
  - The [Leaderboard API documentation](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) followed.
  - A new game with the name of 'benawiGame' created by using the API.
